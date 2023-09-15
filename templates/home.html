@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <style>
+    img {
+      width:100%;
+      object-fit:cover;
+    }
+    #name {
+      position:sticky;
+      top:0;
+      
+    }
+    h3{
+      text-align: center;
+    }
+    p{
+      justify-content:center;
+    }
+  </style>
+  <title>Careers</title>
+</head>
+<body>
+  <h1 id='name'>Careers</h1>
+  <img src="https://flaskproject--gokul-gituser.repl.co/static/workpic.jpg">
+ <p> <h3>KICKSTART YOUR CAREER WITH US</h3>
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus mauris ultrices eros in cursus. Eget arcu dictum varius duis at consectetur. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Faucibus ornare suspendisse sed nisi lacus sed viverra. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Arcu dui vivamus arcu felis. Nulla aliquet enim tortor at auctor. Viverra justo nec ultrices dui sapien eget mi proin sed. Fringilla urna porttitor rhoncus dolor. Id volutpat lacus laoreet non. Libero nunc conmassa enim nec dui. Rhoncus est pellentesque elit ullamcorper. Id eu nisl nunc mi ipsum faucibus vitae. Volutpat ac tincidunt vitae semper quis lectus. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Sed egestas egestas fringilla phasellus. Imperdiet dui accumsan sit amet.
+ </p> 
+  <div><h3>Open Positions</h3>
+  {% for job in jobs %}
+   {% include 'jobitem.html' %}
+  {% endfor %}
+  </div>
+  <button>CONTACT US</button>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
