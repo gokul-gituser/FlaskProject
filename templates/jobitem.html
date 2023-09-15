@@ -1,15 +1,18 @@
-<div class="container border-bottom " style="padding-bottom:10px; padding-top:5px;">
-  <div class="row">
-  <div class="col-9">
+<div class="container mt-2  " >
+  <div class="row ">
+    <div class="col-sm-6 offset-md-3 border-bottom  p-2">
       <h4>{{job['title']}}</h4>
-      <div> <b>Location:</b> {{job['location']}}</div>
+      <div> <b class="text-body-tertiary">Location:</b> {{job['location']}}
+      </div>
 
       {% if 'salary' in job %}
-      <div> <b>Salary:</b> {{job['salary']}}</div>
+      <div> <b class="text-body-tertiary">Salary:</b> {{job['salary']}}
+      </div>
       {% endif %}
+      
     </div>
-  <div class="col-3">
-      <button type="button" class="btn btn-outline-primary">Apply</button>
-  </div>
+    <div class="col-sm-2">
+       <button type="button" class="btn btn-outline-primary mt-4">Apply</button>
+      </div>
   </div>
 </div>
